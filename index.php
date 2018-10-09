@@ -8,7 +8,7 @@
 if ($_GET["base"] === null) {
   $quote_file = "base/en.json";
   if ($_GET["lang"] != null) {
-    $lang = $_GET["lang"];
+    $lang = strtolower($_GET["lang"]); // ignore case
     $quote_file = "base/$lang.json";
   }
 }
