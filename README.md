@@ -5,7 +5,7 @@
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/popoway/php-random-quotes.svg)](https://github.com/popoway/php-random-quotes/releases)
 [![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/w/popoway/php-random-quotes.svg)](https://github.com/popoway/php-random-quotes/commits)
 [![license](https://img.shields.io/github/license/popoway/php-random-quotes.svg)](https://github.com/popoway/php-random-quotes/blob/master/LICENSE)  
-Developed on PHP, `php-random-quotes` is a simple API for querying a quote randomly selected from a JSON quote pile
+Developed on PHP, `php-random-quotes` is a simple API for querying a quote randomly selected from a JSON quote pile.
 
 ## Quick Links
 
