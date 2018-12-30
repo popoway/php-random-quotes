@@ -16,7 +16,7 @@ Release Notes: [Release Notes](https://github.com/popoway/php-random-quotes/rele
 
 The following parameters are available:
 
-| Parameter     | Value        | Comment| Optional|Default value|
+| Parameter     | Value        | Comment| Mandatory| Default value|
 | ------------- |:-------------:| -----:|-----:|-----:|
 | base      | URL | Location of the quote pile in JSON format. This will override "lang" parameter. |false|base/en.json|
 | lang      | i18n codes defined in RFC 3066 | Specify the language of available quotes. |false|en|
