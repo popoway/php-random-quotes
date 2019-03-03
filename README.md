@@ -16,11 +16,11 @@ Release Notes: [Release Notes](https://github.com/popoway/php-random-quotes/rele
 
 The following parameters are available:
 
-| Parameter     | Value        | Comment| Mandatory| Default value|
+| Parameter     | Value        | Comment| Optional| Default value|
 | ------------- |:-------------:| -----:|-----:|-----:|
-| base      | URL | Location of the quote pile in JSON format. This will override "lang" parameter. |false|base/en.json|
-| lang      | i18n codes defined in RFC 3066 | Specify the language of available quotes. |false|en|
-| output      | See below: json/quote-only/double-hyphen/no-hyphen/single-hyphen | Specify the language of available quotes. |false|single-hyphen|
+| base      | URL | Location of the quote pile in JSON format. This will override "lang" parameter. |true|base/en.json|
+| lang      | i18n codes defined in RFC 3066 | Specify the language of available quotes. |true|en|
+| output      | See below: json/quote-only/double-hyphen/no-hyphen/single-hyphen | Specify the language of available quotes. |true|single-hyphen|
 | | json | JSON of a single quote as return value |||
 | | quote-only | Quote only as return value|||
 | | double-hyphen | Two adjacent hyphens between quote and author as return value|||
@@ -29,11 +29,25 @@ The following parameters are available:
 
 Examples:
 
-Requesting URL: _index.php?base=base/en.json&output=json_  
-Return: _{"Quote":"Rediscover the world.","Author":"popoway"}_
+Execute:  
+```bash
+curl https://php-random-quotes.app.popoway.cloud/index.php?base=base/en.json&output=json
+```
 
-Requesting URL: _index.php?lang=zh-cn&output=no-hyphen_  
-Return: _做菜的人一般吃菜很少。……从这点说起来，愿意做菜给别人吃的人是比较不自私的。 汪曾祺_
+Return:  
+```json
+{"Quote":"Rediscover the world.","Author":"popoway"}
+```
+
+Execute:  
+```bash
+curl https://php-random-quotes.app.popoway.cloud/index.php?lang=zh-cn&output=no-hyphen
+```
+
+Return:  
+```
+做菜的人一般吃菜很少。……从这点说起来，愿意做菜给别人吃的人是比较不自私的。 汪曾祺
+```
 
 ## AJAX
 
